@@ -28,6 +28,10 @@
     <finalName>${project.artifactId}</finalName>
 
     <plugins>
+   <plugin>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-maven-plugin</artifactId>
+    </plugin>
              <plugin>
   <artifactId>maven-assembly-plugin</artifactId>
   <executions>
