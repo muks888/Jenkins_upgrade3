@@ -3,7 +3,7 @@ pipeline{
     stages {
       stage('Build apps') {
         steps{
-          sh('mvn -f java-tomcat-sample/pom.xml clean package')
+          sh('/scratch/wcpbt/software/maven/apache-maven-3.9.4/bin/mvn  -f java-tomcat-sample/pom.xml clean package')
         }
         post {
           success {
