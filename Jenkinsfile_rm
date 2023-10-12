@@ -1,0 +1,21 @@
+pipeline{
+  agent any
+  stages {
+    stage('Init') {
+      steps {
+        echo 'This is muks'
+        echo 'Start testing'
+      }
+    }
+    stage('Build') {
+      steps {
+        echo 'Build project'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        echo 'Deploy it...'
+      }
+    }
+  }
+}
